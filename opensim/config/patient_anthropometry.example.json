@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "subject_id": "P001",
+  "units": "m",
+  "patient_height": 1.7,
+  "foot_length": null,
+  "patient_mass_kg": null
+}

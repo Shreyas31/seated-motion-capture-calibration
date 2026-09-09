@@ -1,0 +1,160 @@
+QWidget {
+    color: #e6edf1;
+}
+
+QMainWindow, QWidget#appRoot {
+    background-color: #151d23;
+    color: #e6edf1;
+    font-family: "Segoe UI";
+    font-size: 10pt;
+}
+
+QGroupBox {
+    background-color: #202b33;
+    border: 1px solid #3b4c57;
+    border-radius: 8px;
+    margin-top: 12px;
+    padding: 14px 12px 12px 12px;
+    font-weight: 600;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 12px;
+    padding: 0 5px;
+    color: #c9dbe5;
+}
+
+QGroupBox#currentStepCard {
+    background-color: #183446;
+    border: 1px solid #3b7da0;
+}
+
+QLabel#applicationTitle {
+    color: #d8edf8;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+QLabel[headerChip="true"] {
+    background-color: #202b33;
+    border: 1px solid #3b4c57;
+    border-radius: 10px;
+    padding: 5px 9px;
+    color: #d5e2e9;
+}
+
+QPushButton {
+    min-height: 30px;
+    padding: 5px 12px;
+    border: 1px solid #607581;
+    border-radius: 5px;
+    background-color: #293740;
+    color: #f0f5f7;
+}
+
+QPushButton:hover:!disabled {
+    background-color: #36505f;
+    border-color: #68a8c9;
+}
+
+QPushButton:pressed:!disabled {
+    background-color: #244252;
+}
+
+QPushButton:disabled {
+    background-color: #222b30;
+    border-color: #354149;
+    color: #77858d;
+}
+
+QPushButton[workflowStep="true"] {
+    border: 0;
+    border-bottom: 3px solid transparent;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 9px 14px;
+}
+
+QPushButton[workflowStep="true"]:checked {
+    color: #ffffff;
+    background-color: #176b91;
+    border-radius: 5px;
+}
+
+QPushButton[workflowStep="true"][workflowComplete="true"]:!checked {
+    color: #70d39a;
+    font-weight: 700;
+}
+
+QPushButton#dangerButton {
+    color: #ffaaaa;
+    border-color: #a75d5d;
+}
+
+QLineEdit, QComboBox, QDoubleSpinBox {
+    min-height: 30px;
+    padding: 3px 7px;
+    border: 1px solid #607581;
+    border-radius: 4px;
+    background-color: #182229;
+    color: #f0f5f7;
+    selection-background-color: #287da5;
+}
+
+QLineEdit:focus, QComboBox:focus, QDoubleSpinBox:focus {
+    border: 2px solid #5aafd5;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #202b33;
+    color: #f0f5f7;
+    selection-background-color: #176b91;
+}
+
+QTableWidget {
+    background-color: #19232a;
+    alternate-background-color: #222f37;
+    color: #e6edf1;
+    border: 1px solid #3b4c57;
+    border-radius: 5px;
+    gridline-color: #34434c;
+}
+
+QHeaderView::section {
+    background-color: #2a3942;
+    color: #d8e6ed;
+    padding: 7px;
+    border: 0;
+    border-right: 1px solid #43545e;
+    font-weight: 600;
+}
+
+QProgressBar {
+    min-height: 12px;
+    max-height: 12px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #38464e;
+}
+
+QProgressBar::chunk {
+    border-radius: 6px;
+    background-color: #41a86d;
+}
+
+QPlainTextEdit {
+    background-color: #0d1418;
+    color: #e6edf1;
+    border: 1px solid #3b4c57;
+    border-radius: 5px;
+    font-family: "Cascadia Mono", Consolas, monospace;
+    font-size: 9pt;
+}
+
+QToolTip {
+    background-color: #e6edf1;
+    color: #17232b;
+    border: 0;
+    padding: 5px;
+}

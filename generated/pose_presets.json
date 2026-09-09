@@ -1,0 +1,583 @@
+{
+    "model": "Rajagopal_SeatedMoCap.osim",
+    "poses": {
+        "bed_palms_together": {
+            "coordinates_m": {
+                "/jointset/ground_pelvis/pelvis_tx": 0.0,
+                "/jointset/ground_pelvis/pelvis_ty": 0.0,
+                "/jointset/ground_pelvis/pelvis_tz": 0.0
+            },
+            "coordinates_rad": {
+                "/jointset/acromial_l/arm_add_l": -2.531161603633762e-11,
+                "/jointset/acromial_l/arm_flex_l": 0.0,
+                "/jointset/acromial_l/arm_rot_l": 0.0,
+                "/jointset/acromial_r/arm_add_r": -2.531161603633762e-11,
+                "/jointset/acromial_r/arm_flex_r": 0.0,
+                "/jointset/acromial_r/arm_rot_r": 0.0,
+                "/jointset/ankle_l/ankle_angle_l": -3.885439173984418e-11,
+                "/jointset/ankle_r/ankle_angle_r": -3.885439173984418e-11,
+                "/jointset/back/lumbar_bending": 0.0,
+                "/jointset/back/lumbar_extension": 0.0,
+                "/jointset/back/lumbar_rotation": 0.0,
+                "/jointset/elbow_l/elbow_flex_l": 1.5707963267808736,
+                "/jointset/elbow_r/elbow_flex_r": 1.5707963267808736,
+                "/jointset/ground_pelvis/pelvis_list": 0.0,
+                "/jointset/ground_pelvis/pelvis_rotation": 0.0,
+                "/jointset/ground_pelvis/pelvis_tilt": 0.0,
+                "/jointset/hip_l/hip_adduction_l": -6.755494956124558e-11,
+                "/jointset/hip_l/hip_flexion_l": 1.5707963267990794,
+                "/jointset/hip_l/hip_rotation_l": 0.0,
+                "/jointset/hip_r/hip_adduction_r": -6.755494956124558e-11,
+                "/jointset/hip_r/hip_flexion_r": 1.5707963267990794,
+                "/jointset/hip_r/hip_rotation_r": 0.0,
+                "/jointset/mtp_l/mtp_angle_l": 0.0,
+                "/jointset/mtp_r/mtp_angle_r": 0.0,
+                "/jointset/neck_mocap/neck_flexion_mocap": 0.0,
+                "/jointset/neck_mocap/neck_lateral_bending_mocap": 0.0,
+                "/jointset/neck_mocap/neck_rotation_mocap": 0.0,
+                "/jointset/patellofemoral_l/knee_angle_l_beta": 9.529612563249909e-06,
+                "/jointset/patellofemoral_r/knee_angle_r_beta": 9.529612563249909e-06,
+                "/jointset/radioulnar_l/pro_sup_l": 1.5707963267838445,
+                "/jointset/radioulnar_r/pro_sup_r": 1.5707963267838445,
+                "/jointset/radius_hand_l/wrist_dev_l": 4.43142655010416e-11,
+                "/jointset/radius_hand_l/wrist_flex_l": 0.0,
+                "/jointset/radius_hand_r/wrist_dev_r": 4.43142655010416e-11,
+                "/jointset/radius_hand_r/wrist_flex_r": 0.0,
+                "/jointset/scapulothoracic_l_mocap/shoulder_girdle_l_elevation": 0.0,
+                "/jointset/scapulothoracic_l_mocap/shoulder_girdle_l_protraction": 0.0,
+                "/jointset/scapulothoracic_l_mocap/shoulder_girdle_l_upward_rotation": 0.0,
+                "/jointset/scapulothoracic_r_mocap/shoulder_girdle_r_elevation": 0.0,
+                "/jointset/scapulothoracic_r_mocap/shoulder_girdle_r_protraction": 0.0,
+                "/jointset/scapulothoracic_r_mocap/shoulder_girdle_r_upward_rotation": 0.0,
+                "/jointset/subtalar_l/subtalar_angle_l": 0.0,
+                "/jointset/subtalar_r/subtalar_angle_r": 0.0,
+                "/jointset/walker_knee_l/knee_angle_l": 9.529612563249909e-06,
+                "/jointset/walker_knee_r/knee_angle_r": 9.529612563249909e-06
+            },
+            "generation_method": "prescribed_coordinates_forward_kinematics",
+            "ideal_orientations_wxyz": {
+                "calcn_l_imu": [
+                    0.7071067811865475,
+                    0.0,
+                    0.0,
+                    0.7071067811865477
+                ],
+                "calcn_r_imu": [
+                    0.7071067811865475,
+                    0.0,
+                    0.0,
+                    0.7071067811865477
+                ],
+                "femur_l_imu": [
+                    0.7071067811865475,
+                    0.0,
+                    0.0,
+                    0.7071067811865477
+                ],
+                "femur_r_imu": [
+                    0.7071067811865475,
+                    0.0,
+                    0.0,
+                    0.7071067811865477
+                ],
+                "hand_l_imu": [
+                    0.5,
+                    0.5000000000000001,
+                    -0.5,
+                    0.5
+                ],
+                "hand_r_imu": [
+                    0.5,
+                    -0.5000000000000001,
+                    0.5,
+                    0.5
+                ],
+                "head_mocap_imu": [
+                    1.0,
+                    -1.1102230246251565e-16,
+                    0.0,
+                    0.0
+                ],
+                "humerus_l_imu": [
+                    1.0,
+                    -1.1102230246251565e-16,
+                    0.0,
+                    0.0
+                ],
+                "humerus_r_imu": [
+                    1.0,
+                    -1.1102230246251565e-16,
+                    0.0,
+                    0.0
+                ],
+                "pelvis_imu": [
+                    1.0,
+                    -1.1102230246251565e-16,
+                    0.0,
+                    0.0
+                ],
+                "radius_l_imu": [
+                    0.5,
+                    0.5000000000000001,
+                    -0.5,
+                    0.5
+                ],
+                "radius_r_imu": [
+                    0.5,
+                    -0.5000000000000001,
+                    0.5,
+                    0.5
+                ],
+                "shoulder_girdle_l_mocap_imu": [
+                    0.7071067811865475,
+                    -0.7071067811865477,
+                    0.0,
+                    0.0
+                ],
+                "shoulder_girdle_r_mocap_imu": [
+                    0.7071067811865475,
+                    0.7071067811865477,
+                    0.0,
+                    0.0
+                ],
+                "tibia_l_imu": [
+                    0.7071067811865475,
+                    0.0,
+                    0.0,
+                    0.7071067811865477
+                ],
+                "tibia_r_imu": [
+                    0.7071067811865475,
+                    0.0,
+                    0.0,
+                    0.7071067811865477
+                ],
+                "torso_imu": [
+                    1.0,
+                    -1.1102230246251565e-16,
+                    0.0,
+                    0.0
+                ]
+            },
+            "model_reference_orientations_wxyz": {
+                "calcn_l_imu": [
+                    0.7071102316816018,
+                    9.16390391356394e-07,
+                    -1.1378566979101967e-06,
+                    0.7071033306731462
+                ],
+                "calcn_r_imu": [
+                    0.7071102316816018,
+                    -9.16390391356394e-07,
+                    1.1378566979101967e-06,
+                    0.7071033306731462
+                ],
+                "femur_l_imu": [
+                    0.7071067811850686,
+                    2.3884281468686014e-11,
+                    2.388428146878592e-11,
+                    0.7071067811880264
+                ],
+                "femur_r_imu": [
+                    0.7071067811850686,
+                    -2.3884281468686014e-11,
+                    -2.388428146878592e-11,
+                    0.7071067811880264
+                ],
+                "hand_l_imu": [
+                    0.48155785587755795,
+                    0.344910518661809,
+                    -0.5375789182686855,
+                    0.6001230475428527
+                ],
+                "hand_r_imu": [
+                    0.48155785587755784,
+                    -0.34491051866180894,
+                    0.5375789182686855,
+                    0.6001230475428528
+                ],
+                "head_mocap_imu": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "humerus_l_imu": [
+                    1.0,
+                    1.265580801816881e-11,
+                    0.0,
+                    0.0
+                ],
+                "humerus_r_imu": [
+                    1.0,
+                    -1.265580801816881e-11,
+                    0.0,
+                    4.8271527307690214e-33
+                ],
+                "pelvis_imu": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "radius_l_imu": [
+                    0.48155785586991556,
+                    0.3449105186724789,
+                    -0.5375789182553885,
+                    0.600123047554764
+                ],
+                "radius_r_imu": [
+                    0.48155785586991556,
+                    -0.3449105186724789,
+                    0.5375789182553885,
+                    0.600123047554764
+                ],
+                "shoulder_girdle_l_mocap_imu": [
+                    0.7071067811865475,
+                    -0.7071067811865475,
+                    0.0,
+                    0.0
+                ],
+                "shoulder_girdle_r_mocap_imu": [
+                    0.7071067811865475,
+                    0.7071067811865475,
+                    6.82662485949987e-33,
+                    4.180102141583134e-49
+                ],
+                "tibia_l_imu": [
+                    0.7071102316681516,
+                    9.163894433905065e-07,
+                    -1.1378528648023111e-06,
+                    0.7071033306865966
+                ],
+                "tibia_r_imu": [
+                    0.7071102316681516,
+                    -9.163894433905065e-07,
+                    1.1378528648023111e-06,
+                    0.7071033306865966
+                ],
+                "torso_imu": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "model_representation_error_deg": {
+                "calcn_l_imu": 0.0005837025423026973,
+                "calcn_r_imu": 0.0005837025423026973,
+                "femur_l_imu": 3.8780260827063385e-09,
+                "femur_r_imu": 3.8780260827063385e-09,
+                "hand_l_imu": 21.723233420364004,
+                "hand_r_imu": 21.723233420364018,
+                "head_mocap_imu": 1.2722218725854067e-14,
+                "humerus_l_imu": 1.4502614937565249e-09,
+                "humerus_r_imu": 1.4502360493190731e-09,
+                "pelvis_imu": 1.2722218725854067e-14,
+                "radius_l_imu": 21.72323341986478,
+                "radius_r_imu": 21.72323341986478,
+                "shoulder_girdle_l_mocap_imu": 3.508354649267438e-15,
+                "shoulder_girdle_r_mocap_imu": 3.508354649267438e-15,
+                "tibia_l_imu": 0.0005837003364950552,
+                "tibia_r_imu": 0.0005837003364950552,
+                "torso_imu": 1.2722218725854067e-14
+            },
+            "model_representation_summary": {
+                "maximum_error_deg": 21.723233420364018,
+                "rms_error_deg": 10.537315994519135,
+                "worst_frame": "hand_r_imu"
+            }
+        },
+        "chair_palms_together": {
+            "coordinates_m": {
+                "/jointset/ground_pelvis/pelvis_tx": 0.0,
+                "/jointset/ground_pelvis/pelvis_ty": 0.0,
+                "/jointset/ground_pelvis/pelvis_tz": 0.0
+            },
+            "coordinates_rad": {
+                "/jointset/acromial_l/arm_add_l": -1.3753016336408475e-11,
+                "/jointset/acromial_l/arm_flex_l": 0.0,
+                "/jointset/acromial_l/arm_rot_l": 0.0,
+                "/jointset/acromial_r/arm_add_r": -1.3753016336408475e-11,
+                "/jointset/acromial_r/arm_flex_r": 0.0,
+                "/jointset/acromial_r/arm_rot_r": 0.0,
+                "/jointset/ankle_l/ankle_angle_l": -4.339451695924319e-11,
+                "/jointset/ankle_r/ankle_angle_r": -4.339451695924319e-11,
+                "/jointset/back/lumbar_bending": 0.0,
+                "/jointset/back/lumbar_extension": 0.0,
+                "/jointset/back/lumbar_rotation": 0.0,
+                "/jointset/elbow_l/elbow_flex_l": 1.5707963267657825,
+                "/jointset/elbow_r/elbow_flex_r": 1.5707963267657825,
+                "/jointset/ground_pelvis/pelvis_list": 0.0,
+                "/jointset/ground_pelvis/pelvis_rotation": 0.0,
+                "/jointset/ground_pelvis/pelvis_tilt": 0.0,
+                "/jointset/hip_l/hip_adduction_l": -6.952383270286051e-11,
+                "/jointset/hip_l/hip_flexion_l": 1.5707963266642337,
+                "/jointset/hip_l/hip_rotation_l": 0.0,
+                "/jointset/hip_r/hip_adduction_r": -6.952383270286051e-11,
+                "/jointset/hip_r/hip_flexion_r": 1.5707963266642337,
+                "/jointset/hip_r/hip_rotation_r": 0.0,
+                "/jointset/mtp_l/mtp_angle_l": 0.0,
+                "/jointset/mtp_r/mtp_angle_r": 0.0,
+                "/jointset/neck_mocap/neck_flexion_mocap": 0.0,
+                "/jointset/neck_mocap/neck_lateral_bending_mocap": 0.0,
+                "/jointset/neck_mocap/neck_rotation_mocap": 0.0,
+                "/jointset/patellofemoral_l/knee_angle_l_beta": 1.5707963266794265,
+                "/jointset/patellofemoral_r/knee_angle_r_beta": 1.5707963266794265,
+                "/jointset/radioulnar_l/pro_sup_l": 1.5707963267948375,
+                "/jointset/radioulnar_r/pro_sup_r": 1.5707963267948375,
+                "/jointset/radius_hand_l/wrist_dev_l": 5.978688220965958e-11,
+                "/jointset/radius_hand_l/wrist_flex_l": 0.0,
+                "/jointset/radius_hand_r/wrist_dev_r": 5.978688220965958e-11,
+                "/jointset/radius_hand_r/wrist_flex_r": 0.0,
+                "/jointset/scapulothoracic_l_mocap/shoulder_girdle_l_elevation": 0.0,
+                "/jointset/scapulothoracic_l_mocap/shoulder_girdle_l_protraction": 0.0,
+                "/jointset/scapulothoracic_l_mocap/shoulder_girdle_l_upward_rotation": 0.0,
+                "/jointset/scapulothoracic_r_mocap/shoulder_girdle_r_elevation": 0.0,
+                "/jointset/scapulothoracic_r_mocap/shoulder_girdle_r_protraction": 0.0,
+                "/jointset/scapulothoracic_r_mocap/shoulder_girdle_r_upward_rotation": 0.0,
+                "/jointset/subtalar_l/subtalar_angle_l": 0.0,
+                "/jointset/subtalar_r/subtalar_angle_r": 0.0,
+                "/jointset/walker_knee_l/knee_angle_l": 1.5707963266794265,
+                "/jointset/walker_knee_r/knee_angle_r": 1.5707963266794265
+            },
+            "generation_method": "prescribed_coordinates_forward_kinematics",
+            "ideal_orientations_wxyz": {
+                "calcn_l_imu": [
+                    1.0,
+                    -1.1102230246251565e-16,
+                    0.0,
+                    0.0
+                ],
+                "calcn_r_imu": [
+                    1.0,
+                    -1.1102230246251565e-16,
+                    0.0,
+                    0.0
+                ],
+                "femur_l_imu": [
+                    0.7071067811865475,
+                    0.0,
+                    0.0,
+                    0.7071067811865477
+                ],
+                "femur_r_imu": [
+                    0.7071067811865475,
+                    0.0,
+                    0.0,
+                    0.7071067811865477
+                ],
+                "hand_l_imu": [
+                    0.5,
+                    0.5000000000000001,
+                    -0.5,
+                    0.5
+                ],
+                "hand_r_imu": [
+                    0.5,
+                    -0.5000000000000001,
+                    0.5,
+                    0.5
+                ],
+                "head_mocap_imu": [
+                    1.0,
+                    -1.1102230246251565e-16,
+                    0.0,
+                    0.0
+                ],
+                "humerus_l_imu": [
+                    1.0,
+                    -1.1102230246251565e-16,
+                    0.0,
+                    0.0
+                ],
+                "humerus_r_imu": [
+                    1.0,
+                    -1.1102230246251565e-16,
+                    0.0,
+                    0.0
+                ],
+                "pelvis_imu": [
+                    1.0,
+                    -1.1102230246251565e-16,
+                    0.0,
+                    0.0
+                ],
+                "radius_l_imu": [
+                    0.5,
+                    0.5000000000000001,
+                    -0.5,
+                    0.5
+                ],
+                "radius_r_imu": [
+                    0.5,
+                    -0.5000000000000001,
+                    0.5,
+                    0.5
+                ],
+                "shoulder_girdle_l_mocap_imu": [
+                    0.7071067811865475,
+                    -0.7071067811865477,
+                    0.0,
+                    0.0
+                ],
+                "shoulder_girdle_r_mocap_imu": [
+                    0.7071067811865475,
+                    0.7071067811865477,
+                    0.0,
+                    0.0
+                ],
+                "tibia_l_imu": [
+                    1.0,
+                    -1.1102230246251565e-16,
+                    0.0,
+                    0.0
+                ],
+                "tibia_r_imu": [
+                    1.0,
+                    -1.1102230246251565e-16,
+                    0.0,
+                    0.0
+                ],
+                "torso_imu": [
+                    1.0,
+                    -1.1102230246251565e-16,
+                    0.0,
+                    0.0
+                ]
+            },
+            "model_reference_orientations_wxyz": {
+                "calcn_l_imu": [
+                    0.9952598844594372,
+                    -0.02471895330110707,
+                    -0.09401048474769814,
+                    -0.0029604883023211996
+                ],
+                "calcn_r_imu": [
+                    0.9952598844594372,
+                    0.02471895330110707,
+                    0.09401048474769814,
+                    -0.0029604883023211996
+                ],
+                "femur_l_imu": [
+                    0.7071067812327437,
+                    2.4580386780741734e-11,
+                    2.458038677752999e-11,
+                    0.7071067811403512
+                ],
+                "femur_r_imu": [
+                    0.7071067812327437,
+                    -2.4580386780741734e-11,
+                    -2.458038677752999e-11,
+                    0.7071067811403512
+                ],
+                "hand_l_imu": [
+                    0.48155785588328187,
+                    0.3449105186554108,
+                    -0.5375789182761694,
+                    0.6001230475352329
+                ],
+                "hand_r_imu": [
+                    0.4815578558832816,
+                    -0.34491051865541056,
+                    0.5375789182761694,
+                    0.600123047535233
+                ],
+                "head_mocap_imu": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "humerus_l_imu": [
+                    1.0,
+                    6.876508168204237e-12,
+                    0.0,
+                    0.0
+                ],
+                "humerus_r_imu": [
+                    1.0,
+                    -6.876508168204237e-12,
+                    0.0,
+                    4.8271527307690214e-33
+                ],
+                "pelvis_imu": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "radius_l_imu": [
+                    0.4815578558729712,
+                    0.34491051866980604,
+                    -0.5375789182582298,
+                    0.600123047551303
+                ],
+                "radius_r_imu": [
+                    0.4815578558729712,
+                    -0.34491051866980604,
+                    0.5375789182582298,
+                    0.600123047551303
+                ],
+                "shoulder_girdle_l_mocap_imu": [
+                    0.7071067811865475,
+                    -0.7071067811865475,
+                    0.0,
+                    0.0
+                ],
+                "shoulder_girdle_r_mocap_imu": [
+                    0.7071067811865475,
+                    0.7071067811865475,
+                    6.82662485949987e-33,
+                    4.180102141583134e-49
+                ],
+                "tibia_l_imu": [
+                    0.9952598844599113,
+                    -0.024718953300825398,
+                    -0.09401048474342186,
+                    -0.0029604882810566452
+                ],
+                "tibia_r_imu": [
+                    0.9952598844599113,
+                    0.024718953300825398,
+                    0.09401048474342186,
+                    -0.0029604882810566452
+                ],
+                "torso_imu": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "model_representation_error_deg": {
+                "calcn_l_imu": 11.16178851448138,
+                "calcn_r_imu": 11.161788514481385,
+                "femur_l_imu": 8.480229997171143e-09,
+                "femur_r_imu": 8.480229997171143e-09,
+                "hand_l_imu": 21.723233420610335,
+                "hand_r_imu": 21.723233420610363,
+                "head_mocap_imu": 1.2722218725854067e-14,
+                "humerus_l_imu": 7.880025138694051e-10,
+                "humerus_r_imu": 7.879770694319533e-10,
+                "pelvis_imu": 1.2722218725854067e-14,
+                "radius_l_imu": 21.723233419936804,
+                "radius_r_imu": 21.723233419936804,
+                "shoulder_girdle_l_mocap_imu": 3.508354649267438e-15,
+                "shoulder_girdle_r_mocap_imu": 3.508354649267438e-15,
+                "tibia_l_imu": 11.161788513922655,
+                "tibia_r_imu": 11.161788513922659,
+                "torso_imu": 1.2722218725854067e-14
+            },
+            "model_representation_summary": {
+                "maximum_error_deg": 21.723233420610363,
+                "rms_error_deg": 11.846909679618989,
+                "worst_frame": "hand_r_imu"
+            }
+        }
+    },
+    "quaternion_order": "wxyz",
+    "schema_version": 2,
+    "source_frame": "C",
+    "target_frame": "O"
+}

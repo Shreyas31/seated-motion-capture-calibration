@@ -1,0 +1,116 @@
+# Python environments and bytecode
+.venv/
+venv/
+env/
+.packaging-venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python tooling and test artefacts
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyre/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.cache/
+
+# Local environment
+.env
+.env.*
+!.env.example
+*.local
+
+# CMake and compiler output
+/out/
+/build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+CMakeSettings.json
+CMakeUserPresets.json
+cmake_install.cmake
+CTestTestfile.cmake
+Testing/
+compile_commands.json
+.ninja_deps
+.ninja_log
+build.ninja
+rules.ninja
+install_manifest.txt
+Makefile
+*.a
+*.dll
+*.dylib
+*.exe
+*.idb
+*.iobj
+*.ipdb
+*.obj
+*.o
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.so
+*.tlog
+*.lastbuildstate
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Visual Studio and other editor state
+.vs/
+.vscode/
+.idea/
+*.suo
+*.sln
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.opendb
+*.opensdf
+*.sdf
+*.ipch
+
+# Packaging and locally assembled runtime trees
+/release/
+/dist/
+/runtime/
+*.egg-info/
+
+# Vendored Xsens runtime binaries are intentionally versioned.
+!/dependencies/xsens/**/*.dll
+!/dependencies/xsens/**/*.lib
+
+# Generated OpenSim outputs. The pose presets are a required project resource.
+/generated/*
+!/generated/pose_presets.json
+
+# Runtime data accidentally redirected into the repository
+/logs/
+/models/
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+#docs (to do)
+/docs/
+README.md

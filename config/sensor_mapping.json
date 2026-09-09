@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "sensors": [
+    {
+      "segment": "Right_Hand",
+      "sensor_id": "00B42EB2"
+    },
+    {
+      "segment": "Left_Hand",
+      "sensor_id": "00B42EAA"
+    },
+    {
+      "segment": "Right_Forearm",
+      "sensor_id": "00B42EA3"
+    },
+    {
+      "segment": "Left_Forearm",
+      "sensor_id": "00B42EB0"
+    },
+    {
+      "segment": "Right_Upperarm",
+      "sensor_id": "00B42EA5"
+    },
+    {
+      "segment": "Left_Upperarm",
+      "sensor_id": "00B42EA8"
+    },
+    {
+      "segment": "Right_Shoulder",
+      "sensor_id": "00B42EAC"
+    },
+    {
+      "segment": "Left_Shoulder",
+      "sensor_id": "00B42EA9"
+    },
+    {
+      "segment": "Right_Foot",
+      "sensor_id": "00B42EB1"
+    },
+    {
+      "segment": "Left_Foot",
+      "sensor_id": "00B42EB3"
+    },
+    {
+      "segment": "Right_Lowerleg",
+      "sensor_id": "00B42E17"
+    },
+    {
+      "segment": "Left_Lowerleg",
+      "sensor_id": "00B42E1C"
+    },
+    {
+      "segment": "Right_Upperleg",
+      "sensor_id": "00B42EB9"
+    },
+    {
+      "segment": "Left_Upperleg",
+      "sensor_id": "00B42E6B"
+    },
+    {
+      "segment": "Pelvis",
+      "sensor_id": "00B42EB7"
+    },
+    {
+      "segment": "Sternum",
+      "sensor_id": "00B42EBC"
+    },
+    {
+      "segment": "Head",
+      "sensor_id": "00B42EB4"
+    }
+  ]
+}
