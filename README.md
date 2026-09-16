@@ -170,25 +170,6 @@ accepts `-SkipPython` when validating native code before a Python environment
 has been created and `-SkipFormat` for a build-only check when the Visual Studio
 C++ Clang tools are unavailable.
 
-## Evaluation material
-
-A separate `validation_reproducibility_package` accompanies the thesis pilot.
-It contains optical C3D recordings, IMU exports, participant-specific optical
-models, analysis scripts, selection manifests, QC files, and reported figures.
-Its own README explains how to rerun the optical comparison. None of these
-files is required to build or run this application. The package is not embedded
-in this source repository because participant-data access and model
-redistribution require separate approval.
-
-The primary agreement analysis uses the application's OpenSim joint-angle
-CSVs and optical marker IK. Per-sensor measurement CSVs and relative-segment-
-orientation CSVs generated during validation are archived as supporting data,
-but are not substituted for joint angles in that analysis. See
-[Testing and validation](docs/testing.md#optical-pilot-evaluation) for the
-pilot's scope and limitations, and
-[Protocols and data](docs/protocols-and-data.md#csv-contracts) for the export
-formats.
-
 ## Development guidance
 
 - Treat `frontend/protocol.py`, `backend/frontend_protocol`,
