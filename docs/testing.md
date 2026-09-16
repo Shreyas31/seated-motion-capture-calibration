@@ -194,28 +194,13 @@ descriptions for classes and functions, document every parameter with
 `@param`, and document non-void results with `@return`. The clang-format policy
 disables comment reflow so these descriptions are not rewritten mechanically.
 
-## What automated tests do not prove
-
-Automated tests do not validate:
-
-- radio discovery and connectivity changes;
-- physical sensor identifiers;
-- Xsens heading-offset persistence;
-- sensor mounting on a participant;
-- clinical pose reproducibility;
-- real-time visual latency;
-- clean CSV shutdown during real acquisition;
-- installer behaviour on a machine without development tools.
-
-These require the checks below.
-
 ## Optical pilot evaluation
 
 The thesis evaluation is separate from the automated software tests. Two lab
 participants completed chair- and bed-seated validation recordings with 17
 Xsens IMUs and Vicon optical markers. A companion
-`validation_reproducibility_package`, kept outside this application source
-repository, preserves the selected recordings, the models and scripts used for
+`evaluation-seated-motion-capture-calibration` repository
+preserves the selected recordings, the models and scripts used for
 optical marker IK, synchronisation decisions, analysis windows and cycles,
 quality-control outputs, and the reported agreement tables and waveforms.
 
@@ -224,21 +209,15 @@ windows and 140 selected cycles. It compares IMU OpenSim joint-angle CSVs with
 optical marker IK angles from the corresponding participant-specific model.
 The measurement and relative-segment-orientation CSVs generated during those
 sessions are retained as supporting exports; they were not used as substitute
-optical reference angles. Two additional P01 chair export pairs were archived
-but were not part of the reported optical comparison.
+optical reference angles.
 
 This small technical pilot assesses feasibility and exposes task-specific
 errors. It does not establish population-level equivalence or patient-use
-accuracy. Marker occlusion and optical model-fit quality limit some intervals,
-so the package records exclusions and QC rather than treating every completed
-IK frame as valid reference data. Consult the package README for the rerun
-commands. Review participant consent, lab sharing terms and third-party model
+accuracy. Consult the package README for the rerun commands.
+Review participant consent, lab sharing terms and third-party model
 licences before publishing its data.
 
 ## Manual hardware validation
-
-Use `frontend/tests/MANUAL_HARDWARE_TESTS.md` as the authoritative checklist.
-Record the date, software revision, operator, hardware set, and outcome.
 
 At minimum, a release candidate must validate:
 
