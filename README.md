@@ -44,10 +44,6 @@ recommended code-reading order.
 | `deployment/` | Release assembly, PyInstaller, and Inno Setup files. |
 | `out/`, `.venv/`, `.vs/`, `release/` | Local build/runtime state; these are not authored source. |
 
-Patient recordings, generated patient models, and logs are runtime data. Keep
-them out of this application source repository. A separately governed pilot
-dataset is described under [Evaluation material](#evaluation-material).
-
 ## Prerequisites
 
 Development is currently validated on x64 Windows. Install or provide:
@@ -182,7 +178,6 @@ C++ Clang tools are unavailable.
 - Preserve Doxygen descriptions for public header classes and functions,
   including `@param` tags and `@return` tags for non-void functions.
 - Run automated tests after every change to calibration or workflow state.
-- Complete the manual hardware checklist before distributing a release.
 
 Protocol and data-format details are in
 [Protocols and data](docs/protocols-and-data.md). Installer and recipient
