@@ -111,6 +111,9 @@ Thumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 
-#docs (to do)
-/docs/
+# Keep third-party README files excluded while allowing project documentation.
 README.md
+!/README.md
+!/opensim/README.md
+!/deployment/README.md
+!/dependencies/README.md

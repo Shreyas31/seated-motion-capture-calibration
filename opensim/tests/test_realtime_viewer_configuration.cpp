@@ -1,9 +1,15 @@
 #include "realtime_viewer_configuration.h"
 
-#include <cassert>
 #include <stdexcept>
+#include <string>
 
 namespace {
+
+void expect(const bool condition, const std::string& message) {
+    if (!condition) {
+        throw std::runtime_error(message);
+    }
+}
 
 template <typename Function> void expectRuntimeError(Function&& function) {
     bool threw = false;
@@ -12,20 +18,23 @@ template <typename Function> void expectRuntimeError(Function&& function) {
     } catch (const std::runtime_error&) {
         threw = true;
     }
-    assert(threw);
+    expect(threw, "Invalid viewer arguments did not raise a runtime error.");
 }
 
 void testRequiredArgumentsUseDefaults() {
     const char* arguments[]{"opensim_rt_viewer", "model.osim", "presets.json", "chair", "Geometry"};
     const auto configuration = SeatedMoCap::parseRealtimeViewerConfiguration(5, arguments);
 
-    assert(configuration.modelPath == "model.osim");
-    assert(configuration.presetPath == "presets.json");
-    assert(configuration.poseName == "chair");
-    assert(configuration.geometryPath == "Geometry");
-    assert(configuration.listeningDurationSeconds == 120);
-    assert(!configuration.stationaryFeetEnabled());
-    assert(configuration.jointAngleOutputPath.empty());
+    expect(configuration.modelPath == "model.osim", "The model path was parsed incorrectly.");
+    expect(configuration.presetPath == "presets.json", "The preset path was parsed incorrectly.");
+    expect(configuration.poseName == "chair", "The pose name was parsed incorrectly.");
+    expect(configuration.geometryPath == "Geometry", "The geometry path was parsed incorrectly.");
+    expect(configuration.listeningDurationSeconds == 120,
+           "The default listening duration was incorrect.");
+    expect(!configuration.stationaryFeetEnabled(),
+           "Stationary feet were unexpectedly enabled by default.");
+    expect(configuration.jointAngleOutputPath.empty(),
+           "A joint-angle output path was unexpectedly set by default.");
 }
 
 void testAllOptionalArgumentsAreParsedTogether() {
@@ -33,9 +42,11 @@ void testAllOptionalArgumentsAreParsedTogether() {
                             "Geometry",          "45",         "stationary-feet", "angles.csv"};
     const auto configuration = SeatedMoCap::parseRealtimeViewerConfiguration(8, arguments);
 
-    assert(configuration.listeningDurationSeconds == 45);
-    assert(configuration.stationaryFeetEnabled());
-    assert(configuration.jointAngleOutputPath == "angles.csv");
+    expect(configuration.listeningDurationSeconds == 45,
+           "The optional listening duration was parsed incorrectly.");
+    expect(configuration.stationaryFeetEnabled(), "The stationary-feet option was not enabled.");
+    expect(configuration.jointAngleOutputPath == "angles.csv",
+           "The joint-angle output path was parsed incorrectly.");
 }
 
 void testInvalidDurationIsRejected() {
@@ -65,10 +76,14 @@ void testInvalidTranslationModeIsRejected() {
 } // namespace
 
 int main() {
-    assert(!SeatedMoCap::isRealtimeViewerArgumentCountValid(4));
-    assert(SeatedMoCap::isRealtimeViewerArgumentCountValid(5));
-    assert(SeatedMoCap::isRealtimeViewerArgumentCountValid(8));
-    assert(!SeatedMoCap::isRealtimeViewerArgumentCountValid(9));
+    expect(!SeatedMoCap::isRealtimeViewerArgumentCountValid(4),
+           "Too few viewer arguments were accepted.");
+    expect(SeatedMoCap::isRealtimeViewerArgumentCountValid(5),
+           "The required viewer arguments were rejected.");
+    expect(SeatedMoCap::isRealtimeViewerArgumentCountValid(8),
+           "The full viewer argument list was rejected.");
+    expect(!SeatedMoCap::isRealtimeViewerArgumentCountValid(9),
+           "Too many viewer arguments were accepted.");
 
     testRequiredArgumentsUseDefaults();
     testAllOptionalArgumentsAreParsedTogether();

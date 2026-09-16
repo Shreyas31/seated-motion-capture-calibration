@@ -1,10 +1,17 @@
 #include "orientation_stream.h"
 
-#include <cassert>
 #include <cstring>
 #include <limits>
+#include <stdexcept>
+#include <string>
 
 namespace {
+
+void expect(const bool condition, const std::string& message) {
+    if (!condition) {
+        throw std::runtime_error(message);
+    }
+}
 
 SeatedMoCap::Realtime::OrientationFrameV1 makeValidFrame() {
     SeatedMoCap::Realtime::OrientationFrameV1 frame{};
@@ -21,8 +28,9 @@ SeatedMoCap::Realtime::OrientationFrameV1 makeValidFrame() {
 
 void expectInvalid(const SeatedMoCap::Realtime::OrientationFrameV1& frame) {
     const auto validation = SeatedMoCap::Realtime::validateOrientationFrame(frame);
-    assert(!validation.valid);
-    assert(!validation.errorMessage.empty());
+    expect(!validation.valid, "An invalid orientation frame was accepted.");
+    expect(!validation.errorMessage.empty(),
+           "An invalid orientation frame did not provide a rejection reason.");
 }
 
 } // namespace
@@ -30,8 +38,9 @@ void expectInvalid(const SeatedMoCap::Realtime::OrientationFrameV1& frame) {
 int main() {
     auto frame = makeValidFrame();
     const auto validResult = SeatedMoCap::Realtime::validateOrientationFrame(frame);
-    assert(validResult.valid);
-    assert(validResult.errorMessage.empty());
+    expect(validResult.valid, "A valid orientation frame was rejected.");
+    expect(validResult.errorMessage.empty(),
+           "A valid orientation frame produced an error message.");
 
     frame = makeValidFrame();
     frame.magic[0] = 'X';

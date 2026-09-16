@@ -17,7 +17,6 @@ if(NOT OPENSIM_INSTALL_DIR)
     )
 endif()
 
-# OpenSimConfig.cmake is located here in the Windows OpenSim SDK.
 set(
     OpenSim_DIR
     "${OPENSIM_INSTALL_DIR}/sdk/cmake"
@@ -30,7 +29,6 @@ message(STATUS "OpenSim CMake package: ${OpenSim_DIR}")
 
 find_package(OpenSim CONFIG REQUIRED)
 
-# Generates the project's augmented OpenSim model.
 add_executable(generate_seated_mocap_model
     src/generate_seated_mocap_model.cpp
     src/patient_anthropometry.cpp
@@ -86,7 +84,6 @@ target_link_libraries(opensim_rt_viewer
     ws2_32
 )
 
-# Test for coordinate conventions.
 add_executable(test_opensim_runtime
     tests/test_opensim_runtime.cpp
 )

@@ -13,8 +13,7 @@ project(WeightedEstimate_Seated_Calibration_IRP LANGUAGES CXX)
 
 include(CTest)
 
-# Third-party headers vendored with the repository. Components link these
-# targets instead of reaching into one another's source trees.
+# Third-party headers vendored with the repository.
 add_library(project_eigen INTERFACE)
 target_include_directories(project_eigen SYSTEM INTERFACE
     "$<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/dependencies/Eigen>"
@@ -25,7 +24,6 @@ target_include_directories(project_nlohmann_json SYSTEM INTERFACE
     "$<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/dependencies>"
 )
 
-# Include sub-projects.
 # The existing Xsens backend.
 add_subdirectory("backend")
 
@@ -83,8 +81,6 @@ install(
 
 install(
     FILES
-        "${CMAKE_SOURCE_DIR}/deployment/setup_frontend.cmd"
-        "${CMAKE_SOURCE_DIR}/deployment/launch_frontend.cmd"
         "${CMAKE_SOURCE_DIR}/deployment/README.md"
     DESTINATION .
 )
